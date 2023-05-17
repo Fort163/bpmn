@@ -32,7 +32,7 @@ class ParamRequest {
         return find
     }
 
-    public LinkedHashMap<String,Object> getAllParam(){
+    public Object getAllParam(){
         def get = new GetMethod(URL_BPMN+'history/process-instance/'+requestHelper.getProcessInstance()+'/variables?size=1000');
         get.addRequestHeader(new Header('Accept', '*/*'))
         get.addRequestHeader(new Header('camundaId', requestHelper.getCamundaId()))
