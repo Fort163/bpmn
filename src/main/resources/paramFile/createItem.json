@@ -1,0 +1,726 @@
+{
+  "debtorRef": {
+    "inMspRegistry": false,
+    "deprecated": false,
+    "caption": "12313",
+    "id": 5861642,
+    "recCounterparty": false,
+    "version": 5885430,
+    "codeOgrnAnalog": "3333355555777",
+    "mspStayPeriod": [],
+    "nonResidentRf": true,
+    "authorizedBanks": [],
+    "exporter": false,
+    "blocking": [],
+    "bankClient": false,
+    "limits": [],
+    "createDate": "2022-06-22T12:47:36.936+0000",
+    "notifyClientManager": true,
+    "authorFio": "camunda camunda camunda",
+    "partner": false,
+    "tradeRepresentative": false,
+    "accounts": [],
+    "personalAccOpenedInTofk": [],
+    "rating": [],
+    "uuid": "4c63cf20-0ea5-4f58-8dea-128f7578f1f5",
+    "exportExperience": [],
+    "recType": "comm_org",
+    "altCaptions": [],
+    "separateDivision": [],
+    "extAddresses": [
+      {
+        "uuid": "f8e6749d-d1c1-4ace-995a-5e2285390c09",
+        "extCountry": {
+          "code": "036",
+          "alpha2Code": "AU",
+          "kodAr": "20,50",
+          "caption": "АВСТРАЛИЯ",
+          "heirCountries": [],
+          "uuid": "a8713a23-15e3-42ae-9434-fec5f7cf4803",
+          "ata": "1",
+          "b1": "1",
+          "prStr": 1,
+          "b2": "1",
+          "alpha3Code": "AUS",
+          "b3": "1",
+          "b5": "1",
+          "catalogId": {
+            "caption": "Страны",
+            "catalogIdentifier": "country",
+            "catalogUuid": "307c2910-617f-47d1-863e-4cb1928c278f",
+            "catalogTypeId": "1"
+          },
+          "altCaptions": [],
+          "id": 2821,
+          "createDate": "2020-03-02T06:22:11.808+0000",
+          "actual": true,
+          "naim": "АВСТРАЛИЯ",
+          "dateFrom": "2022-06-07T12:42:36.087+0000",
+          "version": 3410,
+          "prRegio": "6",
+          "krnaim": "АВСТРАЛИЯ",
+          "reportShortName": "Австралия",
+          "anaim": "AUSTRALIA",
+          "dateMod": "1996-04-26",
+          "authorFio": "fts-adapter fts-adapter fts-adapter",
+          "tpp": "VICTORIAN EMPLOYERS\u0027 CHAMBER OF COMMERCE AND INDUSTRY",
+          "worldRegions": [
+            {
+              "authorFio": "Норрис Чак Младший",
+              "worldRegionId": {
+                "uuid": "8a21d1c4-d438-47cb-8966-be6b51b6f4d1"
+              },
+              "id": 87,
+              "dateFrom": "2021-12-23T09:21:57.730+0000",
+              "uuid": "b865000d-ed68-447a-8fd1-8d14c87c9b57",
+              "version": 88,
+              "createDate": "2021-12-23T09:21:57.727+0000"
+            },
+            {
+              "authorFio": "Норрис Чак Младший",
+              "worldRegionId": {
+                "uuid": "8e4e669e-985c-44c6-9ac8-98a42db83117"
+              },
+              "id": 86,
+              "dateFrom": "2021-12-23T09:21:47.835+0000",
+              "uuid": "379f6bb2-cbd8-4aba-ac83-5386cafde44c",
+              "version": 87,
+              "createDate": "2021-12-23T09:21:47.833+0000"
+            }
+          ],
+          "prLic": 0,
+          "shortName": "АВСТРАЛИЯ"
+        },
+        "extAddressType": "legal",
+        "id": 5845547,
+        "createDate": "2022-06-22T12:47:36.936+0000",
+        "dateFrom": "2022-06-22T12:47:36.958+0000",
+        "version": 5850898,
+        "authorFio": "camunda camunda camunda",
+        "extAddress": "112313"
+      }
+    ],
+    "dateFrom": "2022-06-22T12:47:36.958+0000",
+    "license": [],
+    "activityStopped": false,
+    "congressExperience": [],
+    "description": "112323",
+    "tnveds": [],
+    "catalogId": {
+      "caption": "Юридические лица",
+      "catalogIdentifier": "org",
+      "catalogUuid": "cb7315bb-8c53-4c96-937c-3453468cc8ab",
+      "catalogTypeId": "1"
+    },
+    "contactPersons": [],
+    "partnerOrg": false,
+    "okveds": [],
+    "deduplicated": false,
+    "specialCounteragentTypes": [],
+    "regCountry": {
+      "code": "036",
+      "alpha2Code": "AU",
+      "kodAr": "20,50",
+      "caption": "АВСТРАЛИЯ",
+      "heirCountries": [],
+      "uuid": "a8713a23-15e3-42ae-9434-fec5f7cf4803",
+      "ata": "1",
+      "b1": "1",
+      "prStr": 1,
+      "b2": "1",
+      "alpha3Code": "AUS",
+      "b3": "1",
+      "b5": "1",
+      "catalogId": {
+        "caption": "Страны",
+        "catalogIdentifier": "country",
+        "catalogUuid": "307c2910-617f-47d1-863e-4cb1928c278f",
+        "catalogTypeId": "1"
+      },
+      "altCaptions": [],
+      "id": 2821,
+      "createDate": "2020-03-02T06:22:11.808+0000",
+      "actual": true,
+      "naim": "АВСТРАЛИЯ",
+      "dateFrom": "2022-06-07T12:42:36.087+0000",
+      "version": 3410,
+      "prRegio": "6",
+      "krnaim": "АВСТРАЛИЯ",
+      "reportShortName": "Австралия",
+      "anaim": "AUSTRALIA",
+      "dateMod": "1996-04-26",
+      "authorFio": "fts-adapter fts-adapter fts-adapter",
+      "tpp": "VICTORIAN EMPLOYERS\u0027 CHAMBER OF COMMERCE AND INDUSTRY",
+      "worldRegions": [
+        {
+          "authorFio": "Норрис Чак Младший",
+          "worldRegionId": {
+            "uuid": "8a21d1c4-d438-47cb-8966-be6b51b6f4d1"
+          },
+          "id": 87,
+          "dateFrom": "2021-12-23T09:21:57.730+0000",
+          "uuid": "b865000d-ed68-447a-8fd1-8d14c87c9b57",
+          "version": 88,
+          "createDate": "2021-12-23T09:21:57.727+0000"
+        },
+        {
+          "authorFio": "Норрис Чак Младший",
+          "worldRegionId": {
+            "uuid": "8e4e669e-985c-44c6-9ac8-98a42db83117"
+          },
+          "id": 86,
+          "dateFrom": "2021-12-23T09:21:47.835+0000",
+          "uuid": "379f6bb2-cbd8-4aba-ac83-5386cafde44c",
+          "version": 87,
+          "createDate": "2021-12-23T09:21:47.833+0000"
+        }
+      ],
+      "prLic": 0,
+      "shortName": "АВСТРАЛИЯ",
+      "key": "a8713a23-15e3-42ae-9434-fec5f7cf4803",
+      "value": "АВСТРАЛИЯ"
+    },
+    "key": "4c63cf20-0ea5-4f58-8dea-128f7578f1f5",
+    "value": "12313"
+  },
+  "responsiblePersonPatronymic": "Александрович",
+  "orderId": {
+    "orderNumber": "S/2023/49841",
+    "uuid": "8b92f561-acd3-4db4-93f2-3e8daa0ec899",
+    "isNpsNeeded": false,
+    "catalogId": {
+      "caption": "Реестр заявок",
+      "catalogIdentifier": "order",
+      "catalogUuid": "0135ac93-0e65-437d-a1f6-4335ba8d77a3",
+      "catalogTypeId": "3"
+    },
+    "processId": "e1abbebc-f322-11ed-be07-1ad5d797e346",
+    "id": 203236,
+    "applicantOrgId": {
+      "uuid": "cf16d45a-ae63-4814-bd7d-9fd55866773a"
+    },
+    "serviceId": {
+      "uuid": "c1f6738d-4613-421d-811f-1fda25fc447a"
+    },
+    "createDate": "2023-05-15T13:17:46.959+0000",
+    "orderName": "Страхование. «Страхование экспортного контракта»",
+    "orderOptions": {},
+    "dateFrom": "2023-05-15T13:17:46.979+0000",
+    "version": 642794,
+    "authorFio": "camunda camunda camunda",
+    "status": "Черновик"
+  },
+  "documents": [],
+  "workDocuments": [],
+  "camundaId": "camunda-mdm",
+  "beneficiaryProvided": "yes",
+  "bookcase": [],
+  "guaranteeSum": "4234",
+  "responsiblePersonSurname": "Кутяков",
+  "guaranteeSumCurrencyRef": {
+    "prVal": "11",
+    "actual": true,
+    "kod": "036",
+    "data": "1997-01-01",
+    "kodOld": "035",
+    "numbegdoc": "РКТС378",
+    "caption": "АВСТРАЛИЙСКИЙ ДОЛЛАР",
+    "dateFrom": "2023-03-09T10:58:40.186+0000",
+    "uuid": "99978b3e-beed-4aa7-8b3c-d2268f4418e0",
+    "version": 65630,
+    "fnaim": "АВСТРАЛИЙСКИЙ ДОЛЛАР",
+    "krnaim": "АВСТРАЛИЙС.ДОЛЛАР",
+    "ccode": "AUD",
+    "datbegdoc": "2010-09-20",
+    "captionEnd": "Australian Dollar",
+    "authorFio": "cbr-adapter cbr-adapter cbr-adapter",
+    "catalogId": {
+      "caption": "Валюта продукта",
+      "catalogIdentifier": "currency",
+      "catalogUuid": "1fb0c7b2-4898-4412-a664-998bf7af72ea",
+      "catalogTypeId": "1"
+    },
+    "id": 16684,
+    "dcode": "36",
+    "createDate": "2019-11-29T11:24:08.643+0000",
+    "key": "99978b3e-beed-4aa7-8b3c-d2268f4418e0",
+    "value": "АВСТРАЛИЙСКИЙ ДОЛЛАР"
+  },
+  "mails": [],
+  "guaranteeType": {
+    "authorFio": "",
+    "catalogId": {
+      "caption": "Виды обеспечения",
+      "catalogIdentifier": "guarantee_types",
+      "catalogUuid": "6d848cdb-d751-4a4f-842a-5e29a0248d14",
+      "catalogTypeId": "1"
+    },
+    "id": 4,
+    "msp": true,
+    "dateFrom": "2022-04-28T17:54:45.549+0000",
+    "version": 3,
+    "uuid": "7039e3c1-cc5f-4aa2-902e-592773fa8450",
+    "value": "Залог",
+    "key": "7039e3c1-cc5f-4aa2-902e-592773fa8450",
+    "createDate": "2022-04-28T17:54:45.549+0000"
+  },
+  "hasDebtorRelationships": "no",
+  "responsiblePersonEmail": "kutyakov.pavel@otr.ru",
+  "guaranteeDeadlineIsDate": "1",
+  "debtorRole": "pokupatel",
+  "camundaProcessId": "e1abbebc-f322-11ed-be07-1ad5d797e346",
+  "guaranteeDeadlineEndDate": "06.04.2023",
+  "catalogId": {
+    "caption": "Заявление «Страхование экспортного контракта»",
+    "catalogIdentifier": "ins_export_contract",
+    "catalogUuid": "1d310895-9f63-4467-9c43-407ecd580bfe",
+    "catalogTypeId": "1"
+  },
+  "responsiblePersonName": "Павел",
+  "beneficiaryRef": {
+    "inMspRegistry": false,
+    "deprecated": false,
+    "caption": "Aruba CO",
+    "id": 5861867,
+    "recCounterparty": false,
+    "version": 5925332,
+    "codeOgrnAnalog": "987654300",
+    "mspStayPeriod": [],
+    "nonResidentRf": true,
+    "authorizedBanks": [],
+    "exporter": false,
+    "blocking": [],
+    "bankClient": false,
+    "limits": [],
+    "createDate": "2022-10-04T09:45:37.202+0000",
+    "notifyClientManager": true,
+    "authorFio": "camunda camunda camunda",
+    "partner": false,
+    "tradeRepresentative": false,
+    "accounts": [],
+    "personalAccOpenedInTofk": [],
+    "rating": [],
+    "uuid": "5a72b624-3842-4d6a-a9ab-c4b07d98caac",
+    "exportExperience": [],
+    "recType": "comm_org",
+    "altCaptions": [],
+    "separateDivision": [],
+    "extAddresses": [
+      {
+        "uuid": "971a5b99-3cd4-489d-bceb-c178def24e2b",
+        "extCountry": {
+          "code": "040",
+          "alpha2Code": "AT",
+          "kodAr": "21,20",
+          "caption": "АВСТРИЙСКАЯ РЕСПУБЛИКА",
+          "heirCountries": [],
+          "uuid": "6500e3b4-1d79-4dfa-861f-929944646b47",
+          "ata": "1",
+          "b1": "1",
+          "prStr": 1,
+          "b2": "1",
+          "alpha3Code": "AUT",
+          "b3": "1",
+          "b5": "1",
+          "catalogId": {
+            "caption": "Страны",
+            "catalogIdentifier": "country",
+            "catalogUuid": "307c2910-617f-47d1-863e-4cb1928c278f",
+            "catalogTypeId": "1"
+          },
+          "altCaptions": [],
+          "id": 2820,
+          "createDate": "2020-03-02T06:22:11.808+0000",
+          "actual": true,
+          "naim": "АВСТРИЙСКАЯ РЕСПУБЛИКА",
+          "dateFrom": "2022-06-07T12:42:35.676+0000",
+          "version": 3401,
+          "prRegio": "1",
+          "krnaim": "АВСТРИЯ",
+          "reportShortName": "Австрия",
+          "anaim": "AUSTRIA",
+          "dateMod": "1996-04-26",
+          "authorFio": "fts-adapter fts-adapter fts-adapter",
+          "tpp": "AUSTRIAN FEDERAL ECONOMIC CHAMBER",
+          "worldRegions": [
+            {
+              "authorFio": "Норрис Чак Младший",
+              "worldRegionId": {
+                "uuid": "8a21d1c4-d438-47cb-8966-be6b51b6f4d1"
+              },
+              "id": 182,
+              "dateFrom": "2021-12-23T10:00:33.229+0000",
+              "uuid": "c5806217-54dc-4ee2-a0fe-ae225fccf19c",
+              "version": 184,
+              "createDate": "2021-12-23T10:00:33.226+0000"
+            },
+            {
+              "authorFio": "Норрис Чак Младший",
+              "worldRegionId": {
+                "uuid": "d7ad9718-42b9-4ec4-a7d3-0b7474745f4e"
+              },
+              "id": 181,
+              "dateFrom": "2021-12-23T10:00:28.019+0000",
+              "uuid": "ce5687ba-5296-48b1-b3a6-c24493365873",
+              "version": 183,
+              "createDate": "2021-12-23T10:00:28.016+0000"
+            }
+          ],
+          "prLic": 0,
+          "shortName": "АВСТРИЯ"
+        },
+        "extAddressType": "legal",
+        "id": 5845869,
+        "createDate": "2022-10-04T09:45:37.202+0000",
+        "dateFrom": "2022-10-04T09:45:37.230+0000",
+        "version": 5851716,
+        "authorFio": "camunda camunda camunda",
+        "extAddress": "District 3"
+      }
+    ],
+    "dateFrom": "2022-10-04T09:45:37.230+0000",
+    "license": [],
+    "activityStopped": false,
+    "congressExperience": [],
+    "description": "ARUBA CO",
+    "tnveds": [],
+    "catalogId": {
+      "caption": "Юридические лица",
+      "catalogIdentifier": "org",
+      "catalogUuid": "cb7315bb-8c53-4c96-937c-3453468cc8ab",
+      "catalogTypeId": "1"
+    },
+    "contactPersons": [],
+    "partnerOrg": false,
+    "okveds": [],
+    "deduplicated": false,
+    "specialCounteragentTypes": [],
+    "regCountry": {
+      "code": "040",
+      "alpha2Code": "AT",
+      "kodAr": "21,20",
+      "caption": "АВСТРИЙСКАЯ РЕСПУБЛИКА",
+      "heirCountries": [],
+      "uuid": "6500e3b4-1d79-4dfa-861f-929944646b47",
+      "ata": "1",
+      "b1": "1",
+      "prStr": 1,
+      "b2": "1",
+      "alpha3Code": "AUT",
+      "b3": "1",
+      "b5": "1",
+      "catalogId": {
+        "caption": "Страны",
+        "catalogIdentifier": "country",
+        "catalogUuid": "307c2910-617f-47d1-863e-4cb1928c278f",
+        "catalogTypeId": "1"
+      },
+      "altCaptions": [],
+      "id": 2820,
+      "createDate": "2020-03-02T06:22:11.808+0000",
+      "actual": true,
+      "naim": "АВСТРИЙСКАЯ РЕСПУБЛИКА",
+      "dateFrom": "2022-06-07T12:42:35.676+0000",
+      "version": 3401,
+      "prRegio": "1",
+      "krnaim": "АВСТРИЯ",
+      "reportShortName": "Австрия",
+      "anaim": "AUSTRIA",
+      "dateMod": "1996-04-26",
+      "authorFio": "fts-adapter fts-adapter fts-adapter",
+      "tpp": "AUSTRIAN FEDERAL ECONOMIC CHAMBER",
+      "worldRegions": [
+        {
+          "authorFio": "Норрис Чак Младший",
+          "worldRegionId": {
+            "uuid": "8a21d1c4-d438-47cb-8966-be6b51b6f4d1"
+          },
+          "id": 182,
+          "dateFrom": "2021-12-23T10:00:33.229+0000",
+          "uuid": "c5806217-54dc-4ee2-a0fe-ae225fccf19c",
+          "version": 184,
+          "createDate": "2021-12-23T10:00:33.226+0000"
+        },
+        {
+          "authorFio": "Норрис Чак Младший",
+          "worldRegionId": {
+            "uuid": "d7ad9718-42b9-4ec4-a7d3-0b7474745f4e"
+          },
+          "id": 181,
+          "dateFrom": "2021-12-23T10:00:28.019+0000",
+          "uuid": "ce5687ba-5296-48b1-b3a6-c24493365873",
+          "version": 183,
+          "createDate": "2021-12-23T10:00:28.016+0000"
+        }
+      ],
+      "prLic": 0,
+      "shortName": "АВСТРИЯ",
+      "key": "6500e3b4-1d79-4dfa-861f-929944646b47",
+      "value": "АВСТРИЙСКАЯ РЕСПУБЛИКА"
+    },
+    "key": "5a72b624-3842-4d6a-a9ab-c4b07d98caac",
+    "value": "Aruba CO"
+  },
+  "guaranteePersonRef": {
+    "inMspRegistry": false,
+    "deprecated": false,
+    "caption": "Aruba CO",
+    "id": 5861867,
+    "recCounterparty": false,
+    "version": 5925332,
+    "codeOgrnAnalog": "987654300",
+    "mspStayPeriod": [],
+    "nonResidentRf": true,
+    "authorizedBanks": [],
+    "exporter": false,
+    "blocking": [],
+    "bankClient": false,
+    "limits": [],
+    "createDate": "2022-10-04T09:45:37.202+0000",
+    "notifyClientManager": true,
+    "authorFio": "camunda camunda camunda",
+    "partner": false,
+    "tradeRepresentative": false,
+    "accounts": [],
+    "personalAccOpenedInTofk": [],
+    "rating": [],
+    "uuid": "5a72b624-3842-4d6a-a9ab-c4b07d98caac",
+    "exportExperience": [],
+    "recType": "comm_org",
+    "altCaptions": [],
+    "separateDivision": [],
+    "extAddresses": [
+      {
+        "uuid": "971a5b99-3cd4-489d-bceb-c178def24e2b",
+        "extCountry": {
+          "code": "040",
+          "alpha2Code": "AT",
+          "kodAr": "21,20",
+          "caption": "АВСТРИЙСКАЯ РЕСПУБЛИКА",
+          "heirCountries": [],
+          "uuid": "6500e3b4-1d79-4dfa-861f-929944646b47",
+          "ata": "1",
+          "b1": "1",
+          "prStr": 1,
+          "b2": "1",
+          "alpha3Code": "AUT",
+          "b3": "1",
+          "b5": "1",
+          "catalogId": {
+            "caption": "Страны",
+            "catalogIdentifier": "country",
+            "catalogUuid": "307c2910-617f-47d1-863e-4cb1928c278f",
+            "catalogTypeId": "1"
+          },
+          "altCaptions": [],
+          "id": 2820,
+          "createDate": "2020-03-02T06:22:11.808+0000",
+          "actual": true,
+          "naim": "АВСТРИЙСКАЯ РЕСПУБЛИКА",
+          "dateFrom": "2022-06-07T12:42:35.676+0000",
+          "version": 3401,
+          "prRegio": "1",
+          "krnaim": "АВСТРИЯ",
+          "reportShortName": "Австрия",
+          "anaim": "AUSTRIA",
+          "dateMod": "1996-04-26",
+          "authorFio": "fts-adapter fts-adapter fts-adapter",
+          "tpp": "AUSTRIAN FEDERAL ECONOMIC CHAMBER",
+          "worldRegions": [
+            {
+              "authorFio": "Норрис Чак Младший",
+              "worldRegionId": {
+                "uuid": "8a21d1c4-d438-47cb-8966-be6b51b6f4d1"
+              },
+              "id": 182,
+              "dateFrom": "2021-12-23T10:00:33.229+0000",
+              "uuid": "c5806217-54dc-4ee2-a0fe-ae225fccf19c",
+              "version": 184,
+              "createDate": "2021-12-23T10:00:33.226+0000"
+            },
+            {
+              "authorFio": "Норрис Чак Младший",
+              "worldRegionId": {
+                "uuid": "d7ad9718-42b9-4ec4-a7d3-0b7474745f4e"
+              },
+              "id": 181,
+              "dateFrom": "2021-12-23T10:00:28.019+0000",
+              "uuid": "ce5687ba-5296-48b1-b3a6-c24493365873",
+              "version": 183,
+              "createDate": "2021-12-23T10:00:28.016+0000"
+            }
+          ],
+          "prLic": 0,
+          "shortName": "АВСТРИЯ"
+        },
+        "extAddressType": "legal",
+        "id": 5845869,
+        "createDate": "2022-10-04T09:45:37.202+0000",
+        "dateFrom": "2022-10-04T09:45:37.230+0000",
+        "version": 5851716,
+        "authorFio": "camunda camunda camunda",
+        "extAddress": "District 3"
+      }
+    ],
+    "dateFrom": "2022-10-04T09:45:37.230+0000",
+    "license": [],
+    "activityStopped": false,
+    "congressExperience": [],
+    "description": "ARUBA CO",
+    "tnveds": [],
+    "catalogId": {
+      "caption": "Юридические лица",
+      "catalogIdentifier": "org",
+      "catalogUuid": "cb7315bb-8c53-4c96-937c-3453468cc8ab",
+      "catalogTypeId": "1"
+    },
+    "contactPersons": [],
+    "partnerOrg": false,
+    "okveds": [],
+    "deduplicated": false,
+    "specialCounteragentTypes": [],
+    "regCountry": {
+      "code": "040",
+      "alpha2Code": "AT",
+      "kodAr": "21,20",
+      "caption": "АВСТРИЙСКАЯ РЕСПУБЛИКА",
+      "heirCountries": [],
+      "uuid": "6500e3b4-1d79-4dfa-861f-929944646b47",
+      "ata": "1",
+      "b1": "1",
+      "prStr": 1,
+      "b2": "1",
+      "alpha3Code": "AUT",
+      "b3": "1",
+      "b5": "1",
+      "catalogId": {
+        "caption": "Страны",
+        "catalogIdentifier": "country",
+        "catalogUuid": "307c2910-617f-47d1-863e-4cb1928c278f",
+        "catalogTypeId": "1"
+      },
+      "altCaptions": [],
+      "id": 2820,
+      "createDate": "2020-03-02T06:22:11.808+0000",
+      "actual": true,
+      "naim": "АВСТРИЙСКАЯ РЕСПУБЛИКА",
+      "dateFrom": "2022-06-07T12:42:35.676+0000",
+      "version": 3401,
+      "prRegio": "1",
+      "krnaim": "АВСТРИЯ",
+      "reportShortName": "Австрия",
+      "anaim": "AUSTRIA",
+      "dateMod": "1996-04-26",
+      "authorFio": "fts-adapter fts-adapter fts-adapter",
+      "tpp": "AUSTRIAN FEDERAL ECONOMIC CHAMBER",
+      "worldRegions": [
+        {
+          "authorFio": "Норрис Чак Младший",
+          "worldRegionId": {
+            "uuid": "8a21d1c4-d438-47cb-8966-be6b51b6f4d1"
+          },
+          "id": 182,
+          "dateFrom": "2021-12-23T10:00:33.229+0000",
+          "uuid": "c5806217-54dc-4ee2-a0fe-ae225fccf19c",
+          "version": 184,
+          "createDate": "2021-12-23T10:00:33.226+0000"
+        },
+        {
+          "authorFio": "Норрис Чак Младший",
+          "worldRegionId": {
+            "uuid": "d7ad9718-42b9-4ec4-a7d3-0b7474745f4e"
+          },
+          "id": 181,
+          "dateFrom": "2021-12-23T10:00:28.019+0000",
+          "uuid": "ce5687ba-5296-48b1-b3a6-c24493365873",
+          "version": 183,
+          "createDate": "2021-12-23T10:00:28.016+0000"
+        }
+      ],
+      "prLic": 0,
+      "shortName": "АВСТРИЯ",
+      "key": "6500e3b4-1d79-4dfa-861f-929944646b47",
+      "value": "АВСТРИЙСКАЯ РЕСПУБЛИКА"
+    },
+    "key": "5a72b624-3842-4d6a-a9ab-c4b07d98caac",
+    "value": "Aruba CO"
+  },
+  "envProtection": [
+    {
+      "envJsonData": {
+        "export_subject_is_military_str": "Нет",
+        "payment_deadline_two_years": "yes",
+        "export_subject_is_military": "no",
+        "payment_deadline_two_years_str": "Да"
+      }
+    }
+  ],
+  "exportContract": [
+    {
+      "ecJsonData": {
+        "subject_types_str": "Сопутствующие товары (работы, услуги)",
+        "subject_types": [
+          "subject_class_1",
+          "subject_class_2"
+        ],
+        "subject_description": "Предмет экспортного контракта",
+        "is_akkreditiv_str": "Нет",
+        "is_advance_str": "Нет",
+        "number": "Номер экспортного контракта",
+        "law_data": {
+          "court_type": "Третейский суд",
+          "court_type_str": "Третейский суд",
+          "applicable_law": {
+            "value": "АВСТРАЛИЯ",
+            "key": "a8713a23-15e3-42ae-9434-fec5f7cf4803"
+          },
+          "pledge_is_banned": "no",
+          "pledge_is_banned_str": "Нет"
+        },
+        "subject_list": [
+          {
+            "id": "3dae0c57-ea7e-4071-b7fb-45d0196f98c0",
+            "meta": {
+              "dataState": "unchanged"
+            },
+            "tnved": {
+              "value": "XXXXXXXX Прочие товары",
+              "key": "cdd90619-f516-4620-a91e-c6b1ee0506e5"
+            },
+            "part": "100",
+            "tmp_id": "3dae0c57-ea7e-4071-b7fb-45d0196f98c0",
+            "classifierType": "tnved"
+          }
+        ],
+        "rus_part_in_price": "lt50",
+        "price": "1",
+        "is_advance": "no",
+        "is_other_payment_order_str": "Нет",
+        "export_periods": {
+          "period_value_type": "month",
+          "period_value_type_str": "В месяцах",
+          "month_count": "1"
+        },
+        "is_payment_delay_str": "Нет",
+        "price_currency": {
+          "value": "AUD АВСТРАЛИЙСКИЙ ДОЛЛАР",
+          "key": "99978b3e-beed-4aa7-8b3c-d2268f4418e0",
+          "uuid": "99978b3e-beed-4aa7-8b3c-d2268f4418e0"
+        },
+        "rus_part_in_price_str": "менее 50%",
+        "other_info": "Дополнительная информация",
+        "is_payment_delay": "no",
+        "status_str": "Заключен",
+        "sign_date": "13.04.2023",
+        "name": "Наименование экспортного контракта",
+        "is_akkreditiv": "no",
+        "is_other_payment_order": "no",
+        "status": "sign"
+      }
+    }
+  ],
+  "guaranteeProvided": "yes",
+  "responsiblePersonTel": "+97876973111",
+  "debtorWorkExperience": "no",
+  "beneficiaryBasis": "234234"
+}
