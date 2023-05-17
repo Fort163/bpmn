@@ -26,7 +26,9 @@ class ParamRequest {
         httpclient.executeMethod(get);
         def byteArray = get.getResponseBody()
         def find = parser.parse(byteArray, 'UTF-8').content.find({ item -> { item.name == paramName } }).value
-        createFileParam(find,paramName);
+        if(find instanceof Map) {
+            createFileParam(find, paramName);
+        }
         return find
     }
 
