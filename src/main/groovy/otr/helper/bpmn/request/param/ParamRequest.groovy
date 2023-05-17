@@ -18,7 +18,7 @@ class ParamRequest {
     def parser = new JsonSlurper();
     def httpclient = new HttpClient();
 
-    public LinkedHashMap<String,Object> getParam(String paramName){
+    public Object getParam(String paramName){
         def get = new GetMethod(URL_BPMN+'history/process-instance/'+requestHelper.getProcessInstance()+'/variables?size=1000');
         get.addRequestHeader(new Header('Accept', '*/*'))
         get.addRequestHeader(new Header('camundaId', requestHelper.getCamundaId()))
