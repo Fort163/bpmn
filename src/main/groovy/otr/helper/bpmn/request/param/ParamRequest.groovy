@@ -25,11 +25,23 @@ class ParamRequest {
         get.addRequestHeader(new Header('Authorization', tokenHelper.getToken()))
         httpclient.executeMethod(get);
         def byteArray = get.getResponseBody()
-        def find = parser.parse(byteArray, 'UTF-8').content.find({ item -> { item.name == paramName } }).value
-        if(find instanceof Map) {
-            createFileParam(find, paramName);
+        /*def find = parser.parse(byteArray, 'UTF-8').content.findAll({ item -> { item.name == paramName } }).last().value
+        */def result = [:]
+        def list = parser.parse(byteArray, 'UTF-8').content.findAll({ item -> { item.name == paramName } })
+        list.forEach(item -> {
+            if(result.createTime == null){
+                result = item;
+            }
+            else {
+                if(item.createTime > result.createTime){
+                    result = item;
+                }
+            }
+        })
+        if(result instanceof Map) {
+            createFileParam(result, paramName);
         }
-        return find
+        return result.value
     }
 
     public Object getAllParam(){
