@@ -2,21 +2,53 @@ package otr.helper.bpmn.report
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import groovy.json.JsonOutput
-import groovy.json.JsonSlurper
 import org.codehaus.groovy.runtime.ResourceGroovyMethods
-import org.json.simple.JSONObject
-import otr.helper.bpmn.request.param.ParamRequest;
+import otr.helper.bpmn.request.param.ParamRequest
 
 
 ParamRequest paramRequest = new ParamRequest();
-def insurance_statement = paramRequest.getParam("insurance_statement")
-def functionMap = paramRequest.getParam("functionMap")
-def createItem = paramRequest.getParam("createItem")
+def insurance_statement = paramRequest.getParam("insurance_statement",true)
+def functionMap = paramRequest.getParam("functionMap",true)
+def clientOrg = paramRequest.getParam("clientOrg",true)
+println(paramRequest.getParam("petitonNumber",true))
+
+
 
 def checkTrue = "<span>&#9746;</span>"
 def checkFalse = "<span>&#9744;</span>"
 
+def clientAddress(clientOrg){
+    def address = clientOrg.extAddresses.find({item -> {
+        item.extAddressType == "legal"
+    }
+    })
+    if(address != null){
+        if(address.extAddress != null){
+            return address.extAddress
+        }
+        else {
+            def result = ""
+            if(address.extRegion != null){
+                result+=address.extRegion + " "
+            }
+            if(address.extStreet != null){
+                result+=address.extStreet + " "
+            }
+            if(address.extHouse != null){
+                result+=address.extHouse + " "
+            }
+            if(address.extBuilding != null){
+                result+=address.extBuilding + " "
+            }
+            return result;
+        }
+    }
+    return null;
+}
+
+def contractInsurance(contact){
+    return contact.surname + " " + contact.name + " " + contact.patronymic
+}
 
 def prev_payment_obligations_info_other(insurance_statement) {
     if (insurance_statement.jsonData.export_contract.price_detals.any_prev_payment_obligations == "yes") {
@@ -34,9 +66,9 @@ def payment_delay_type_sum(insurance_statement) {
     }
 }
 
-def payment_delay_percents_info_full_sum(insurance_statement){
-    if(insurance_statement.jsonData.export_contract.is_payment_delay != "no"){
-        return insurance_statement.jsonData.export_contract.price_detals.payment_delay_percents_info?.full_sum + " " + insurance_statement.jsonData.export_contract.price_detals.payment_delay_percents_info?.interest_rate
+def payment_delay_percents_info_full_sum(insurance_statement,functionMap){
+    if(insurance_statement.jsonData.export_contract.price_include_percents != "no"){
+        return Eval.x(insurance_statement.jsonData.export_contract.price_detals.payment_delay_percents_info?.full_sum, functionMap.amountByCategory) + "\n" + Eval.x(insurance_statement.jsonData.export_contract.price_detals.payment_delay_percents_info?.interest_rate, functionMap.amountByCategory) + " %"
     }
     else {
         return null
@@ -44,7 +76,7 @@ def payment_delay_percents_info_full_sum(insurance_statement){
 }
 
 def payment_delay_percents_info_insured_sum(insurance_statement){
-    if(insurance_statement.jsonData.export_contract.is_payment_delay != "no"){
+    if(insurance_statement.jsonData.export_contract.price_include_percents != "no"){
         return insurance_statement.jsonData.export_contract.price_detals.payment_delay_percents_info?.insured_sum
     }
     else {
@@ -127,7 +159,15 @@ def doc_arrays(insurance_statement, doc_type) {
 
 def reportMap = [
         //        блок 1
-
+        "client_org_caption" : clientOrg.caption,
+        "client_org_ogrn" : clientOrg.ogrn,
+        "client_org_address" : clientAddress(clientOrg),
+        "first_contact_fio" : contractInsurance(insurance_statement.jsonData.first_contact),
+        "first_contact_tel" : insurance_statement.jsonData.first_contact.tel,
+        "first_contact_email" : insurance_statement.jsonData.first_contact.email,
+        "second_contact_fio" : contractInsurance(insurance_statement.jsonData.second_contact),
+        "second_contact_tel" : insurance_statement.jsonData.second_contact.tel,
+        "second_contact_email" : insurance_statement.jsonData.second_contact.email,
 
         //        блок 2
         "export_type_1"                                             : insurance_statement.jsonData.rus_export_types.contains("export_type_1") ? checkTrue : checkFalse,
@@ -204,8 +244,8 @@ def reportMap = [
         "foreign_part_of_foreign_items_full_sum"                    : insurance_statement.jsonData.export_contract.price_detals.foreign_part_of_foreign_items?.full_sum,
         "foreign_part_of_foreign_items_insured_sum"                 : insurance_statement.jsonData.export_contract.price_detals.foreign_part_of_foreign_items?.insured_sum,
 
-        "payment_delay_percents_info_full_sum"                      : payment_delay_percents_info_full_sum(insurance_statement),
-        "payment_delay_percents_info_insured_sum"                   : payment_delay_percents_info_insured_sum(insurance_statement),
+        "payment_delay_percents_info_full_sum"                      : payment_delay_percents_info_full_sum(insurance_statement,functionMap),
+        "payment_delay_percents_info_insured_sum"                   : Eval.x(payment_delay_percents_info_insured_sum(insurance_statement), functionMap.amountByCategory),
 
         "compensation_sum_info_full_sum"                            : insurance_statement.jsonData.export_contract.price_detals.compensation_sum_info?.full_sum,
         "compensation_sum_info_insured_sum"                         : insurance_statement.jsonData.export_contract.price_detals.compensation_sum_info?.insured_sum,

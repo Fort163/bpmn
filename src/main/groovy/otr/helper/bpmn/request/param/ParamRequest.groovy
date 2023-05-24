@@ -19,6 +19,16 @@ class ParamRequest {
     def httpclient = new HttpClient();
 
     public Object getParam(String paramName){
+        this.getParam(paramName,false);
+    }
+
+    public Object getParam(String paramName,Boolean isFromFile){
+        if(isFromFile){
+            def param = readFileParam(paramName);
+            if(param != null){
+                return param;
+            }
+        }
         def get = new GetMethod(URL_BPMN+'history/process-instance/'+requestHelper.getProcessInstance()+'/variables?size=1000');
         get.addRequestHeader(new Header('Accept', '*/*'))
         get.addRequestHeader(new Header('camundaId', requestHelper.getCamundaId()))
@@ -38,8 +48,8 @@ class ParamRequest {
                 }
             }
         })
-        if(result instanceof Map) {
-            createFileParam(result, paramName);
+        if(result.value instanceof Map) {
+            createFileParam(result.value, paramName);
         }
         return result.value
     }
@@ -62,6 +72,19 @@ class ParamRequest {
         def location = this.class.getLocation()
         def file = location.getFile().replace("/target/classes/","/src/main/resources/paramFile/"+paramName+".json")
         new File(file).write(jsonOutput,'UTF-8')
+    }
+
+    private Map readFileParam(String paramName){
+        def location = this.class.getLocation()
+        def fileStr = location.getFile().replace("/target/classes/","/src/main/resources/paramFile/"+paramName+".json")
+        if(new File(fileStr).exists()) {
+            def jsonSlurper = new JsonSlurper()
+            def paramMap = jsonSlurper.parse(new File(fileStr))
+            return paramMap;
+        }
+        else {
+            return null
+        }
     }
 
 }
