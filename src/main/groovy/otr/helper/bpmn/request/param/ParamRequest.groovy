@@ -14,9 +14,20 @@ class ParamRequest {
     private RequestHelper requestHelper = new RequestHelper();
     private TokenHelper tokenHelper = new TokenHelper();
 
-    def URL_BPMN = 'http://bpmn-api-service.bpms-dev.d.exportcenter.ru/bpmn/api/v1/bpmn/'
+    def URL_BPMN_DEV = 'http://bpmn-api-service.bpms-dev.d.exportcenter.ru/bpmn/api/v1/bpmn/'
+    def URL_BPMN_TEST = 'https://lk.t.exportcenter.ru/bpmn/api/v1/bpmn/'
+    def URL_BPMN = null
     def parser = new JsonSlurper();
     def httpclient = new HttpClient();
+
+    ParamRequest() {
+        if(requestHelper.getEnvironment().equals("dev")){
+            URL_BPMN = URL_BPMN_DEV
+        }
+        else {
+            URL_BPMN = URL_BPMN_TEST
+        }
+    }
 
     public Object getParam(String paramName){
         this.getParam(paramName,false);

@@ -1,4 +1,5 @@
 {
-  "processInstance" : "9d5b4dfe-f562-11ed-81b4-beb446ee87fa",
-  "camundaId" : "camunda-mdm"
+  "processInstance" : "2515beb0-5205-11ee-83de-56e6e29030e3",
+  "camundaId" : "camunda-mdm",
+  "environment" : "test"
 }

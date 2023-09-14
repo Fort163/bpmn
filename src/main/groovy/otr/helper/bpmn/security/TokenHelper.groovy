@@ -4,11 +4,24 @@ import groovy.json.JsonSlurper
 import org.apache.commons.httpclient.Header
 import org.apache.commons.httpclient.HttpClient
 import org.apache.commons.httpclient.methods.PostMethod
+import otr.helper.bpmn.request.RequestHelper
 
 class TokenHelper {
 
     private static final URL_DEV = 'http://uidm.uidm-dev.d.exportcenter.ru/sso/oauth2/access_token'
+    private static final URL_TEST = 'https://lk.t.exportcenter.ru/sso/oauth2/access_token'
     private String token = null;
+    private RequestHelper requestHelper = new RequestHelper();
+    private url = null
+
+    TokenHelper() {
+        if(requestHelper.getEnvironment().equals("dev")){
+            url = URL_DEV;
+        }
+        else {
+            url = URL_TEST;
+        }
+    }
 
     public String getToken(){
         if(this.token == null) {
@@ -19,7 +32,7 @@ class TokenHelper {
             try {
                 def parser = new JsonSlurper();
                 HttpClient httpclient = new HttpClient();
-                def post = new PostMethod(URL_DEV)
+                def post = new PostMethod(url)
 
                 post.addRequestHeader(new Header('Accept', 'application/json'))
                 post.addRequestHeader(new Header('"Content-Type"', 'application/x-www-form-urlencoded'))
@@ -31,7 +44,7 @@ class TokenHelper {
                 httpclient.executeMethod(post);
                 def executionResponse = post.getResponseBodyAsString()
                 def execution = parser.parseText(executionResponse).getAt('execution')
-                post = new PostMethod(URL_DEV)
+                post = new PostMethod(url)
                 post.addRequestHeader(new Header('Accept', 'application/json'))
                 post.addRequestHeader(new Header('"Content-Type"', 'application/x-www-form-urlencoded'))
                 post.setParameter('client_id', client_id)
@@ -41,7 +54,7 @@ class TokenHelper {
                 post.setParameter('service', 'dispatcher')
                 post.setParameter('execution', execution)
                 post.setParameter('_eventId', 'next')
-                post.setParameter('username', 'bpmn_upload')
+                post.setParameter('username', 'bpmn_admin')
                 post.setParameter('password', 'password')
                 httpclient.executeMethod(post);
                 def tokenResponse = post.getResponseBodyAsString()

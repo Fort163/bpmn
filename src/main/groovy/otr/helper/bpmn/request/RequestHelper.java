@@ -10,6 +10,7 @@ public class RequestHelper {
 
     private static final String PROCESS_INSTANCE = "processInstance";
     private static final String CAMUNDA_ID = "camundaId";
+    private static final String ENVIRONMENT = "environment";
 
     private Map<String,String> data;
     private  JsonSlurper parser;
@@ -26,6 +27,10 @@ public class RequestHelper {
 
     public String getCamundaId(){
         return data.get(CAMUNDA_ID);
+    }
+
+    public String getEnvironment(){
+        return data.get(ENVIRONMENT);
     }
 
 }
